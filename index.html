@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Houdini</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Houdini Activated 🔮</h1>
+    <div class="container">
+      <div class="box box1"><h3>Notebook</h3></div>
+      <div class="box box2"><h3>Wavy</h3></div>
+    </div>
+    <script>
+      if ("paintWorklet" in CSS) {
+        CSS.paintWorklet.addModule("line-pattern.js");
+      } else {
+        alert("Your browser does not support Houdini 😢");
+      }
+    </script>
+  </body>
+</html>
